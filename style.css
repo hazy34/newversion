@@ -51,7 +51,7 @@ button {
   font-size: 16px;
   transition: 0.3s;
 }
-
+/* Button Hover Effect */
 button:hover {
   background-color: #b15a1e;
 }
