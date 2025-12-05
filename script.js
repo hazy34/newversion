@@ -1,3 +1,4 @@
+/* Selecting Elements */
 const form = document.getElementById('farm-form');
 const itemList = document.getElementById('item-list');
 
