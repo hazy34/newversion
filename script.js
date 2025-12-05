@@ -27,13 +27,13 @@ form.addEventListener('submit', function (e) {
         break;
     }
 
-    /* List*/
+    /*List*/
     itemList.appendChild(li);
 
-    /*Animation effect*/
+    /* Animation effect */
         setTimeout(() => li.classList.add('show'), 10);
 
-    /* Form Reset*/
+    /*Form Reset*/
     form.reset();
   } else {
     alert('All fields are required!');
