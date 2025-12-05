@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e) {
     li.textContent = `${name} - ${quantity} pcs (${category})`;
     li.dataset.category = category;
 
-    /*Color by Category*/
+    /* Color by Category */
     switch (category) {
       case 'vegetable':
         li.style.backgroundColor = '#a8d5ba';
