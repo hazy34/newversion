@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Farm Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="farm-container">
+    <header>
+      <h1>🌾 My Mini Farm</h1>
+      <p>Add new crops or products below!</p>
+      <button id="dark-mode-toggle">Dark Mode</button>
+
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Farm Entry Form</h2>
+        <form id="farm-form">
+          <label for="name">Product / Crop Name:</label>
+          <input type="text" id="name" placeholder="e.g., Carrot">
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" placeholder="e.g., 10">
+
+          <label for="category">Category:</label>
+          <select id="category">
+            <option value="">Select</option>
+            <option value="vegetable">Vegetable</option>
+            <option value="fruit">Fruit</option>
+            <option value="grain">Grain</option>
+          </select>
+
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section class="list-section">
+        <h2>Farm Products</h2>
+        <ul id="item-list">
+          <!-- Entries will appear here -->
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
