@@ -40,7 +40,7 @@ form.addEventListener('submit', function (e) {
   }
 });
 
-/* Dark Mode Toggle*/
+/* Dark Mode Toggle */
 document.getElementById('dark-mode-toggle')
   .addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
