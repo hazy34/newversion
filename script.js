@@ -1,7 +1,7 @@
 const form = document.getElementById('farm-form');
 const itemList = document.getElementById('item-list');
 
-// Submit Event
+// Form Submission
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e) {
     li.textContent = `${name} - ${quantity} pcs (${category})`;
     li.dataset.category = category;
 
-    // Color by Category
+    /*Color by Category*/
     switch (category) {
       case 'vegetable':
         li.style.backgroundColor = '#a8d5ba';
@@ -27,20 +27,20 @@ form.addEventListener('submit', function (e) {
         break;
     }
 
-    // List
+    /* List*/
     itemList.appendChild(li);
 
-    // Animasyon efekti
-    setTimeout(() => li.classList.add('show'), 10);
+    /*Animation effect*/
+        setTimeout(() => li.classList.add('show'), 10);
 
-    // Form Reset
+    /* Form Reset*/
     form.reset();
   } else {
     alert('All fields are required!');
   }
 });
 
-// Dark Mode Toggle
+/* Dark Mode Toggle*/
 document.getElementById('dark-mode-toggle')
   .addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
